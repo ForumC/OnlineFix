@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnlineFix Hosting</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const links = document.querySelectorAll('.file-list a');
+            links.forEach(link => {
+                link.addEventListener('mouseover', () => link.style.color = '#FFD700');
+                link.addEventListener('mouseout', () => link.style.color = '#87CEEB');
+            });
+        });
+    </script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #121212;
+            color: #E0E0E0;
+        }
+
+        header {
+            background: #1F1B24;
+            color: #FFD700;
+            text-align: center;
+            padding: 30px 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #1F1B24;
+            padding: 15px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        nav a {
+            color: #E0E0E0;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #FFD700;
+        }
+
+        main {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: 20px auto;
+            background: #1E1E1E;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #FFD700;
+        }
+
+        .file-list {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .file-list li {
+            background: #2C2C2C;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s, background 0.3s;
+        }
+
+        .file-list li:hover {
+            transform: scale(1.05);
+            background: #3E3E3E;
+        }
+
+        .file-list a {
+            text-decoration: none;
+            color: #87CEEB;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1F1B24;
+            color: #E0E0E0;
+            margin-top: 20px;
+        }
+
+        footer strong {
+            color: #FFD700;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>OnlineFix Hosting</h1>
+        <p>Scarica i tuoi OnlineFix preferiti in un click!</p>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#files">File</a>
+        <a href="#about">Info</a>
+    </nav>
+    <main>
+        <section id="files">
+            <h2>Lista dei File</h2>
+            <ul class="file-list">
+                <li><a href="https://hello.app/space/shared/public/bafkreidg5c47gaj6rluqn453vier7pqlwfrxzyiosq5vaxcyadorcunuxq" target="_blank" download>PicoPark2 Online Fix</a></li>
+                <li><a href="https://hello.app/space/shared/public/bafkreian3263jldvqez7jufd26gf6fy7wizquk4fnm5f4omekerhmjhsyu" target="_blank" download>Liar's Bar Online Fix</a></li>
+                <li><a href="https://hello.app/space/shared/public/bafkreid6l2inx23lreaby6uvmay5sfokxbbn2skcolpko7swrqfqk7swuy" target="_blank" download>Raft Online Fix</a></li>
+            </ul>
+        </section>
+        <section id="about">
+            <h2>Info</h2>
+            <p>Questo sito permette di scaricare OnlineFix direttamente. Aggiungi o modifica i file nella sezione HTML per aggiornare i contenuti.</p>
+            <p>Creato da <strong>IlGattoSteamPunk</strong>.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 OnlineFix Hosting. Tutti i diritti riservati. Creato da <strong>IlGattoSteamPunk</strong>.</p>
+    </footer>
+</body>
+</html>
